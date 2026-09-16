@@ -1,8 +1,7 @@
 <?php
-// Tạo giá trị ngẫu nhiên N trong khoảng 1 -> 100
 $N = isset($_GET['n']) ? (int)$_GET['n'] : rand(1, 100);
 
-// Đảm bảo N nằm trong khoảng hợp lệ
+
 if ($N < 1 || $N > 100) {
     $N = rand(1, 100);
 }
